@@ -1,7 +1,9 @@
-print("Title of program: Cheer bot")
+
+
+print("Title of program: Encouragement bot")
 print()
 while True:
-  description = input("Could you describe how you feel?")
+  description = input("Could you describe how you feel in a sentence?")
 
   list_of_words = description.split()
 
@@ -22,10 +24,6 @@ while True:
     if each_word == "tired":
       feelings_list.append("tired")
       encouragement_list.append("you are stronger than you think")
-      counter += 1
-    if each_word == "stress":
-      feelings_list.append("stress")
-      encouragement_list.append("everything will turn out well :)")
       counter += 1
 
   if counter == 0:
@@ -53,4 +51,3 @@ while True:
   print()
   print(output)
   print()
-
